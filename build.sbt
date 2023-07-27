@@ -62,6 +62,9 @@ PlayKeys.externalizeResources := false
 
 pomIncludeRepository := { _ => false }
 
+sonatypeRepository := "https://s01.oss.sonatype.org/service/local"
+sonatypeCredentialHost:= "s01.oss.sonatype.org"
+
 publishTo := sonatypePublishToBundle.value
 
 pgpSigningKey := Some("06336BB38E57B56BF6E9A72EDA056AEAEFA4FB1D")
