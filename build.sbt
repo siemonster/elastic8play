@@ -4,7 +4,7 @@ version := "1.14.0"
 
 name := "elastic8play"
 
-organization := "org.siemonster"
+organization := "com.siemonster"
 
 organizationName := "SIEMonster"
 
@@ -62,10 +62,9 @@ PlayKeys.externalizeResources := false
 
 pomIncludeRepository := { _ => false }
 
-sonatypeRepository := "https://s01.oss.sonatype.org/service/local"
-sonatypeCredentialHost:= "s01.oss.sonatype.org"
-
 publishTo := sonatypePublishToBundle.value
+sonatypeRepository := "https://s01.oss.sonatype.org/service/local"
+sonatypeCredentialHost := "s01.oss.sonatype.org"
 
 pgpSigningKey := Some("06336BB38E57B56BF6E9A72EDA056AEAEFA4FB1D")
 
