@@ -1,14 +1,14 @@
 import sbt.url
 
-version := "1.13.5"
+version := "1.14.0"
 
-name := "elastic4play"
+name := "elastic8play"
 
-organization := "org.thehive-project"
+organization := "org.siemonster"
 
-organizationName := "TheHive-Project"
+organizationName := "SIEMonster"
 
-organizationHomepage := Some(url("https://thehive-project.org/"))
+organizationHomepage := Some(url("https://siemonster.com/"))
 
 homepage := Some(url("https://github.com/TheHive-Project/elastic4play"))
 
@@ -21,7 +21,7 @@ lazy val elastic4play = (project in file("."))
 // Add Http2 support to be able to ask client certificate
 // cf. https://github.com/playframework/playframework/issues/8143
 
-scalaVersion := "2.12.16"
+scalaVersion := "2.12.17"
 
 resolvers += "elasticsearch-releases" at "https://artifacts.elastic.co/maven"
 
@@ -34,16 +34,16 @@ scmInfo := Some(
 
 developers := List(
   Developer(
-    id = "toom",
-    name = "Thomas",
-    email = "thomas@thehive-project.org",
-    url = url("https://github.com/To-om")
+    id = "siemonster",
+    name = "Ikuturso",
+    email = "jim@siemonster.com",
+    url = url("https://github.com/siemonster")
   )
 )
 
 licenses += ("AGPL-3", url("https://www.gnu.org/licenses/agpl-3.0.html"))
 
-val elastic4sVersion = "7.17.2"
+val elastic4sVersion = "8.8.1"
 libraryDependencies ++= Seq(
   cacheApi,
   "com.sksamuel.elastic4s" %% "elastic4s-core"          % elastic4sVersion,
@@ -64,7 +64,7 @@ pomIncludeRepository := { _ => false }
 
 publishTo := sonatypePublishToBundle.value
 
-pgpSigningKey := Some("0CD5AC59DE5C5A8E0EE138493D99BB18562CBC1C")
+pgpSigningKey := Some("06336BB38E57B56BF6E9A72EDA056AEAEFA4FB1D")
 
 publishMavenStyle := true
 
